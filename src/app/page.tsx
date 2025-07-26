@@ -289,7 +289,7 @@ const page = () => {
                             <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
                                 Open to new opportunities, research collaborations, and interesting projects.
                             </p>
-                            <div className="space-y-2 text-sm font-mono">
+                            <div className="space-y-2 text-sm font-mono"> 
                                 <div>{resumeData.personal.email}</div>
                                 <div className="text-gray-600 dark:text-gray-400">{resumeData.personal.phone}</div>
                                 <div className="text-gray-600 dark:text-gray-400">{resumeData.personal.location}</div>
