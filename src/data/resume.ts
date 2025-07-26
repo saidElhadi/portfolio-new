@@ -14,10 +14,10 @@ export const resumeData = {
   bio: "Innovative, results-driven Full-Stack Developer with over 3 years of hands-on experience in creating dynamic and responsive web applications. Published AI researcher specializing in wireless sensing and computer vision. Originally from Algiers, Algeria, currently living in China.",
   
   languages: [
-    { name: "Arabic", level: "Native" },
-    { name: "French", level: "Fluent" },
     { name: "English", level: "Fluent" },
-    { name: "Chinese", level: "Intermediate" }
+    { name: "French", level: "Fluent" },
+    { name: "Arabic", level: "Fluent" },
+    { name: "Chinese", level: "Upper Intermediate" }
   ],
   
   skills: {

@@ -95,11 +95,32 @@ const page = () => {
                             </div>
                         </motion.div>
 
+                        {/* Languages */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.25 }}
+                        >
+                            <h2 className="text-sm font-mono mb-6 text-red-500">LANGUAGES</h2>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                                {resumeData.languages.map((language, i) => (
+                                    <div key={i} className="text-center">
+                                        <div className="text-xs font-mono font-bold text-black dark:text-white mb-1">
+                                            {language.name}
+                                        </div>
+                                        <div className="text-xs text-gray-600 dark:text-gray-400">
+                                            {language.level}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+
                         {/* Experience */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.3 }}
+                            transition={{ duration: 0.6, delay: 0.35 }}
                         >
                             <h2 className="text-sm font-mono mb-6 text-red-500">EXPERIENCE</h2>
                             <div className="space-y-3">
@@ -123,7 +144,7 @@ const page = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.4 }}
+                            transition={{ duration: 0.6, delay: 0.45 }}
                         >
                             <h2 className="text-sm font-mono mb-6 text-red-500">EDUCATION</h2>
                             <div className="space-y-3">
@@ -175,13 +196,13 @@ const page = () => {
                             transition={{ duration: 0.6, delay: 0.6 }}
                             className="flex gap-6"
                         >
-                            <a href={resumeData.personal.github} className="text-black dark:text-white hover:text-red-500 transition-colors">
+                            <a  target="_blank" rel="noopener noreferrer" href={resumeData.personal.github} className="text-black dark:text-white hover:text-red-500 transition-colors">
                                 <Github size={20} />
                             </a>
-                            <a href={resumeData.personal.linkedin} className="text-black dark:text-white hover:text-red-500 transition-colors">
+                            <a  target="_blank" rel="noopener noreferrer" href={resumeData.personal.linkedin} className="text-black dark:text-white hover:text-red-500 transition-colors">
                                 <Linkedin size={20} />
                             </a>
-                            <a href={`mailto:${resumeData.personal.email}`} className="text-black dark:text-white hover:text-red-500 transition-colors">
+                            <a target="_blank" rel="noopener noreferrer" href={`mailto:${resumeData.personal.email}`} className="text-black dark:text-white hover:text-red-500 transition-colors">
                                 <Mail size={20} />
                             </a>
                         </motion.div>
