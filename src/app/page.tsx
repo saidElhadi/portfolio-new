@@ -57,23 +57,39 @@ const page = () => {
                                 >
                                     CONTACT
                                 </a>
-                                <button className="border border-gray-400 dark:border-gray-600 px-6 py-3 hover:border-black dark:hover:border-white transition-all duration-300 text-sm font-mono">
+                                <a
+                                    href="/Said_Elhadi_Resume_CV.pdf"
+                                    download="Said_Elhadi_Resume_CV.pdf"
+                                    className="border border-gray-400 dark:border-gray-600 px-6 py-3 hover:border-black dark:hover:border-white transition-all duration-300 text-sm font-mono"
+                                >
                                     RESUME
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
 
-                        {/* Skills Grid */}
+                        {/* Skills Detailed */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <h2 className="text-sm font-mono mb-6 text-red-500">TECHNOLOGIES</h2>
-                            <div className="grid grid-cols-3 gap-px bg-gray-300 dark:bg-black">
-                                {["JavaScript", "TypeScript", "Python", "React", "Next.js", "Node.js", "PyTorch", "TensorFlow", "Google Cloud"].map((skill) => (
-                                    <div key={skill} className="bg-white dark:bg-black p-4 text-xs font-mono text-center text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors">
-                                        {skill}
+                            <h2 className="text-sm font-mono mb-6 text-red-500">TECHNICAL SKILLS</h2>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
+                                {Object.entries(resumeData.skills).map(([category, skills], i) => (
+                                    <div key={category} className="flex items-start gap-4">
+                                        <div className="flex flex-wrap gap-1.5">
+                                            <h3 className="text-base font-mono font-bold text-black dark:text-white uppercase tracking-wide w-full">
+                                                {category}
+                                            </h3>
+                                            {skills.map((skill) => (
+                                                <span
+                                                    key={skill}
+                                                    className="px-2 py-0.5 text-xs font-mono border border-gray-300 dark:border-gray-700 text-black dark:text-white hover:border-red-500 hover:text-red-500 transition-all duration-300"
+                                                >
+                                                    {skill}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -223,7 +239,7 @@ const page = () => {
                             </div>
 
                             <div className="space-y-6">
-                                {resumeData.projects.slice(0, 3).map((project, i) => (
+                                {resumeData.projects.slice(0, 6).map((project, i) => (
                                     <motion.div
                                         key={i}
                                         initial={{ opacity: 0, x: 20 }}

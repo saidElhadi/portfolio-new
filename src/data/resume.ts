@@ -22,12 +22,12 @@ export const resumeData = {
   
   skills: {
     "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "C", "C++"],
-    "Frontend": ["React", "Next.js", "Vue.js", "HTML/CSS", "TailwindCSS", "Styled Components", "MUI"],
+    "Frontend": ["React", "Next.js", "Vue.js", "HTML/CSS", "TailwindCSS"],
     "Backend": ["Node.js", "REST APIs", "SSR"],
     "Databases": ["SQL", "NoSQL", "Firebase"],
-    "Cloud & DevOps": ["AWS", "Git", "Responsive Design", "Scrum/Agile"],
     "AI/ML": ["PyTorch", "TensorFlow", "Keras", "Computer Vision", "Deep Learning"],
     "Hardware": ["ESP32", "Raspberry Pi", "Wi-Fi Sensing", "Wireless Networks"],
+    "Cloud & DevOps": ["AWS", "Git", "Responsive Design", "Scrum/Agile"],
     "Mobile": ["React Native", "Native Modules"]
   },
   
@@ -37,16 +37,16 @@ export const resumeData = {
       position: "Full-Stack Developer",
       location: "Shenzhen, China",
       period: "November 2023 - Present",
-      type: "Full-time, Remote",
+      type: "Full-time, Hybrid",
       description: "Developing full-stack web applications with modern technologies, integrating payment processors, and working with React Native and native modules."
     },
     {
       company: "Oleap AI",
-      position: "SEO Specialist",
+      position: "Digital Marketing",
       location: "Shenzhen, China",
-      period: "January 2024 - Present",
-      type: "Full-time, Remote",
-      description: "Optimizing web presence and search engine performance for AI-driven platforms."
+      period: "September 2023 - November 2023",
+      type: "Full-time, remote",
+      description: "Optimizing web presence and search engine performance for a AI headsets company."
     },
     {
       company: "Joysun",
@@ -76,9 +76,9 @@ export const resumeData = {
   
   education: [
     {
-      degree: "Master of Arts in Computer Science",
+      degree: "Master of Science in Computer Science",
       school: "Harbin Institute of Technology (Shenzhen)",
-      period: "September 2023 - Present",
+      period: "September 2023 - January 2026",
       status: "In Progress",
       description: "Advanced studies in AI and machine learning with focus on wireless sensing research. Working towards PhD admission."
     },
@@ -134,6 +134,13 @@ export const resumeData = {
       tech: ["ONNX", "TVM", "PyTorch", "Model Optimization"],
       status: "Completed",
       link: "#"
+    },
+    {
+      title: "Chat2D a 2d ai chat interface ",
+      description: "Built a 2d ai chat interface.",
+      tech: ["Gemini", "NextJS", "Shadcn", "LLM"],
+      status: "Completed",
+      link: "https://chat2d.vercel.app/"
     },
     {
       title: "ESP32 WiFi Mesh Network",
