@@ -196,7 +196,7 @@ const page = () => {
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 0.50.5 }}
+                            transition={{ duration: 0.6, delay: 0.5 }}
                             className="border-2 border-red-500 p-6 mt-12"
                         >
                             <h3 className="font-bold text-lg mb-4">GET IN TOUCH</h3>
