@@ -95,7 +95,7 @@ export const resumeData = {
     {
       title: "Demo Abstract: Underground Root Tuber Sensing via a Wi-Fi Mesh Network",
       authors: "Said Elhadi, Tao Wang, Yang Zhao",
-      conference: "The 23rd ACM Conference on Embedded Networked Sensor Systems (SenSys '25)",
+      conference: "ACM SenSys Conference",
       year: "2025",
       status: "Published",
       doi: "https://doi.org/10.1145/3715014.3724365",
@@ -104,18 +104,19 @@ export const resumeData = {
     {
       title: "DNN Models for WiFi CSI-based Underground Image Reconstruction",
       authors: "Said Elhadi, Yang Zhao",
-      conference: "Under Review",
-      year: "2024",
-      status: "Under Review",
+      conference: "ACM MobiSys Conference",
+      year: "2025",
+      status: "Published",
+      doi: "https://dl.acm.org/doi/10.1145/3711875.3734569",
       description: "Comprehensive study evaluating deep learning architectures for mapping wireless signal tensors to high-resolution underground tuber images."
     },
     {
       title: "DRIFT: Data-driven RF Tomography via Cross-modal Sensing and Continual Learning",
       authors: "Yang Zhao, Tao Wang, Said Elhadi",
-      conference: "Published",
-      year: "2024",
+      conference: "IEEE AVSS Conference",
+      year: "2025",
       status: "Published",
-      github: "https://github.com/Data-driven-RTI/DRIFT",
+      doi: "https://arxiv.org/abs/2508.11654",
       description: "Cross-modal sensing system with continual learning for robust underground target detection in dynamic environments."
     }
   ],

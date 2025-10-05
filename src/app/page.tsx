@@ -17,6 +17,9 @@ import {
     Briefcase
 } from 'lucide-react'
 import { resumeData } from '../data/resume'
+import Image from 'next/image'
+
+import pic from "@/assets/pic.jpg"
 
 const page = () => {
 
@@ -189,6 +192,23 @@ const page = () => {
                             </div>
                         </motion.div>
 
+                        {/* Contact Card */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.50.5 }}
+                            className="border-2 border-red-500 p-6 mt-12"
+                        >
+                            <h3 className="font-bold text-lg mb-4">GET IN TOUCH</h3>
+                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+                                Open to new opportunities, research collaborations, and interesting projects.
+                            </p>
+                            <div className="space-y-2 text-sm font-mono"> 
+                                <div>{resumeData.personal.email}</div>
+                                <div className="text-gray-600 dark:text-gray-400">{resumeData.personal.phone}</div>
+                                <div className="text-gray-600 dark:text-gray-400">{resumeData.personal.location}</div>
+                            </div>
+                        </motion.div>
                         {/* Links */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -214,7 +234,10 @@ const page = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.7 }}
                         className="space-y-8"
-                    >
+                    >   
+                        <div className="aspect-square mx-auto h-fit border-2  relative">
+                                <Image src={pic} fill alt='' />
+                        </div>
                         {/* Publications */}
                         <div>
                             <div className="border-l-4 border-red-500 pl-6 mb-8">
@@ -233,9 +256,9 @@ const page = () => {
                                     >
                                         <div className="flex justify-between items-start mb-3">
                                             <h3 className="font-bold text-base group-hover:text-red-500 transition-colors leading-tight">{pub.title}</h3>
-                                            {(pub.doi || pub.github) && (
+                                            {(pub.doi) && (
                                                 <a
-                                                    href={pub.doi || pub.github}
+                                                    href={pub.doi}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="text-gray-400 hover:text-red-500 transition-colors ml-4 flex-shrink-0"
@@ -299,23 +322,6 @@ const page = () => {
                             </div>
                         </div>
 
-                        {/* Contact Card */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 1.3 }}
-                            className="border-2 border-red-500 p-6 mt-12"
-                        >
-                            <h3 className="font-bold text-lg mb-4">GET IN TOUCH</h3>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                                Open to new opportunities, research collaborations, and interesting projects.
-                            </p>
-                            <div className="space-y-2 text-sm font-mono"> 
-                                <div>{resumeData.personal.email}</div>
-                                <div className="text-gray-600 dark:text-gray-400">{resumeData.personal.phone}</div>
-                                <div className="text-gray-600 dark:text-gray-400">{resumeData.personal.location}</div>
-                            </div>
-                        </motion.div>
                     </motion.div>
                 </div>
             </div>
