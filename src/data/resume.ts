@@ -11,7 +11,7 @@ export const resumeData = {
     portfolio: "https://yourportfolio.com", // Update with your portfolio URL
   },
   
-  bio: "Innovative, results-driven Full-Stack Developer with over 3 years of hands-on experience in creating dynamic and responsive web applications. Published AI researcher specializing in wireless sensing and computer vision. Originally from Algiers, Algeria, currently living in China.",
+  bio: "Innovative, results-driven Full-Stack Developer with over 3 years of hands-on experience in creating dynamic and responsive web and mobile applications. Published AI researcher specializing in deep learning in the domain of wireless sensing and computer vision. Originally from Algiers, currently living in Shenzhen, China.",
   
   languages: [
     { name: "English", level: "Fluent" },
@@ -21,14 +21,14 @@ export const resumeData = {
   ],
   
   skills: {
-    "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "C", "C++"],
+    "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "C", "C++", "Shell Scripting"],
     "Frontend": ["React", "Next.js", "Vue.js", "HTML/CSS", "TailwindCSS"],
-    "Backend": ["Node.js", "REST APIs", "SSR"],
-    "Databases": ["SQL", "NoSQL", "Firebase"],
-    "AI/ML": ["PyTorch", "TensorFlow", "Keras", "Computer Vision", "Deep Learning"],
+    "Backend": ["Node.js", "Express", "Spring Boot"],
+    "Databases": ["SQL", "NoSQL", "MySQL", "PostgreSQL", "MongoDB", "Redis"],
+    "AI/ML": ["PyTorch", "TensorFlow", "Keras", "ONNX", "TVM", "Scikit-learn", "Yolov5", "Torchvision"],
     "Hardware": ["ESP32", "Raspberry Pi", "Wi-Fi Sensing", "Wireless Networks"],
     "Cloud & DevOps": ["AWS", "Git", "Responsive Design", "Scrum/Agile"],
-    "Mobile": ["React Native", "Native Modules"]
+    "Mobile": ["React Native", "Android Studio", "Xcode"],
   },
   
   experience: [
@@ -78,8 +78,8 @@ export const resumeData = {
     {
       degree: "Master of Science in Computer Science",
       school: "Harbin Institute of Technology (Shenzhen)",
-      period: "September 2023 - January 2026",
-      status: "In Progress",
+      period: "September 2023 - January 2025",
+      status: "Completed",
       description: "Advanced studies in AI and machine learning with focus on wireless sensing research. Working towards PhD admission."
     },
     {
