@@ -8,7 +8,9 @@ export const resumeData = {
     location: "Shenzhen, China",
     github: "https://github.com/saidElhadi", // Update with your GitHub
     linkedin: "https://www.linkedin.com/in/sayid-elhadi-23098b216/", // Update with your LinkedIn
-    portfolio: "https://yourportfolio.com", // Update with your portfolio URL
+    twitter: "https://x.com/SaidElhadi8662",
+    instagram: "https://www.instagram.com/super.sa1d/",
+    portfolio: process.env.NEXT_PUBLIC_SITE_URL ?? "https://said-elhadi.vercel.app",
   },
   
   bio: "Innovative, results-driven Full-Stack Developer with over 3 years of hands-on experience in creating dynamic and responsive web and mobile applications. Published AI researcher specializing in deep learning in the domain of wireless sensing and computer vision. Originally from Algiers, currently living in Shenzhen, China.",
